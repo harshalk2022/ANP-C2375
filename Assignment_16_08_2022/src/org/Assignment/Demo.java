@@ -18,8 +18,6 @@ public class Demo {
 	public static void main(String[] args) {
 		
 		System.out.print("Type number : ");
-		
-		
 		Scanner sc = new Scanner(System.in);
 		int mainInput = sc.nextInt();
 		
