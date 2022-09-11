@@ -1,9 +1,6 @@
 package org.practicaltest.view;
-
 import java.util.Scanner;
-
 import org.practicaltest.model.QuestionAnswer;
-
 public class Main {
 	static Scanner sc = new Scanner(System.in);
 	
