@@ -33,7 +33,7 @@ public class Main {
 		QuestionAnswer [] array =  new QuestionAnswer[50];
 		
 		QuestionAnswer questionAnswer1=new QuestionAnswer("Choose the correct spelling of the word. ", "Separate", "Separete", "Soperate", "Saperate", "Separate");
-		QuestionAnswer questionAnswer2=new QuestionAnswer("Choose the correct spelling of the word. ", "Amatuer", "Amature", "Amateur", "Ameteur", "Amateur");
+		QuestionAnswer questionAnswer2=new QuestionAnswer("Choose the correct spelling of the word. ", "Amatuer", "Amature", "Amateur", "Ameteur", "Amature");
 		QuestionAnswer questionAnswer3=new QuestionAnswer("Choose the correct spelling of the word. ", "Servent", "Sarvent", "Servant", "Sarvant", "Servant");
 		QuestionAnswer questionAnswer4=new QuestionAnswer("Choose the correct spelling of the word. ", "Comittee", "Commitee", "Committee", "Committey", "Committee");
 		QuestionAnswer questionAnswer5=new QuestionAnswer("Choose the correct spelling of the word. ", "Shakespear", "Shakespeare", "Shakspiear", "Shakespear", "Shakespeare");
