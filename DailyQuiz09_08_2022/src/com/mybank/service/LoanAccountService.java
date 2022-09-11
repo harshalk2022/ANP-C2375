@@ -6,9 +6,8 @@ public class LoanAccountService {
 	private float rateOfInterest;
 	private int timeperiod;
 	
-	public float CalculateInterest(int loanid, float loanAmount, float rateOfInterest, int timePeriod) {
+	public float CalculateInterest(int loanId, float loanAmount, float rateOfInterest, int timePeriod) {
 		float interestAmount=(loanAmount*rateOfInterest*timePeriod)/100;
 		return interestAmount;
 	}
-
 }

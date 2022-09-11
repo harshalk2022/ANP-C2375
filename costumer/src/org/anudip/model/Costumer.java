@@ -7,13 +7,13 @@ public class Costumer {
 	public Costumer() {
 		this.costumerId=2;
 		this.costumerName="Harshal";
-		System.out.println("constructor without parameter");
+//		System.out.println("constructor without parameter");
 	}
 	
 	public Costumer(int id, String name) {
 		this.costumerId=id;
 		this.costumerName=name;
-		System.out.println("constructor with parameter");
+//		System.out.println("constructor with parameter");
 	}
 	
 	public void setCostumerId(int id) {
