@@ -1,4 +1,4 @@
-package org.practicaltest.question1;
+package org.practicaltest.question1.model;
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -7,10 +7,8 @@ public class Employee {
 	private String employeeName;
 	private Date joiningDate;
 	
-	
 	public Employee() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Employee(int employeeId, String employeeName, Date joiningDate) {
