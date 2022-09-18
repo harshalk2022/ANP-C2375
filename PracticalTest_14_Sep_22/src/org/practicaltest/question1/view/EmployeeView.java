@@ -1,8 +1,11 @@
-package org.practicaltest.question1;
+package org.practicaltest.question1.view;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
+
+import org.practicaltest.question1.model.Employee;
+import org.practicaltest.question1.service.EmployeeService;
 
 public class EmployeeView {
 	static Scanner sc=new Scanner(System.in);
@@ -12,14 +15,14 @@ public class EmployeeView {
   public void addEmployeeDetails() throws ParseException {
 	  Employee employee=new Employee();
 	  
-	  System.out.println("Enter the employee id");
+	  System.out.print("Enter the employee Id : ");
 	  employee.setEmployeeId(sc.nextInt());
 	  sc.nextLine();
 	  
-	  System.out.println("Enter the Employee Name");
+	  System.out.print("Enter the Employee Name : ");
 	  employee.setEmployeeName(sc.nextLine());
 	  
-	  System.out.println("Enter the joining Date of the Employee");
+	  System.out.print("Enter the joining Date of the Employee (dd/MM/yyyy): ");
 	  String date=sc.nextLine();
 	  employee.setJoiningDate(new SimpleDateFormat("dd/MM/yyyy").parse(date));
 	  
@@ -35,4 +38,5 @@ public class EmployeeView {
 			i++;
 		}
   }
+
 }
