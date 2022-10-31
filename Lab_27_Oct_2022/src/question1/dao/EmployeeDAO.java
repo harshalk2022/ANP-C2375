@@ -36,7 +36,6 @@ public class EmployeeDAO {
 		return flag;
 	}
 
-	
 	public static boolean deleteEmployee(int empId) {
 		// TODO Auto-generated method stub
 		boolean flag = false;
