@@ -74,7 +74,7 @@ public class EmployeeDAO {
 				String email = result.getString(5);
 				String dept = result.getString(6);
 
-				System.out.println();
+				System.out.println("+++++++++++++++++++++++++++++");
 				System.out.println("Id : "+id);
 				System.out.println("Name : "+name);
 				System.out.println("Phone : "+phone);
@@ -87,6 +87,28 @@ public class EmployeeDAO {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
+	}
+
+	public static boolean updateEmployee(int employeeId, String employeeName) {
+		boolean flag = false;
+
+		try {
+			Connection connection = ConnectWithDB.createConnection();
+			String query = "update Employee set name =? where id =?;";
+
+			PreparedStatement pstmt = connection.prepareStatement(query);
+
+			pstmt.setString(1, employeeName);
+			pstmt.setInt(2, employeeId);
+
+			// Execute
+			pstmt.executeUpdate();
+			flag = true;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return flag;
 	}
 
 	
