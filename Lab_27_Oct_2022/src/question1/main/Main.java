@@ -19,12 +19,14 @@ public class Main {
 			System.out.println("3. Display Employee");
 			System.out.println("4. Update Employee");
 			System.out.println("5. Exit");
+			
 			System.out.print("Enter Your Choice : ");
 			int choice = sc.nextInt();
 			
 			switch(choice) {
 			case 1:
 				System.out.println("Enter Employee Details ");
+				
 				System.out.print("Id : ");
 				int id = sc.nextInt();
 				sc.nextLine();
@@ -45,6 +47,7 @@ public class Main {
 				String department = sc.nextLine();
 				
 				Employee employee = new Employee(id, name, phone, address, email, department);
+				
 				boolean isAdded = EmployeeDAO.insertEmployeeToDB(employee);
 				
 				if(isAdded) {
@@ -59,9 +62,11 @@ public class Main {
 			case 2:
 				System.out.print("Enter Employee Id to delete Employee : ");
 				int empId = sc.nextInt();
+				
 				boolean isDeleted = EmployeeDAO.deleteEmployee(empId);
+				
 				if(isDeleted) {
-					System.out.println("            -- Employee Deleted Successfully --");
+					System.out.println("            -- Employee Delete Successfully --");
 				}else {
 					System.out.println("            -- Someting went wrong --");
 				}
@@ -73,16 +78,17 @@ public class Main {
 				break;
 				
 			case 4:
-				System.out.print("Enter Student Id to Update Student : ");
+				System.out.print("Enter Employee Id to Update Employee : ");
 				int employeeId = sc.nextInt();
 				sc.nextLine();
 				
 				System.out.print("Enter Name to Update :");
 				String employeeName = sc.nextLine();
+				
 				boolean isUpdated = EmployeeDAO.updateEmployee(employeeId, employeeName);
 				
 				if(isUpdated) {
-					System.out.println("            -- Student Updated Successfully --");
+					System.out.println("            -- Employee Update Successfully --");
 				}else {
 					System.out.println("            -- Someting went wrong --");
 				}
