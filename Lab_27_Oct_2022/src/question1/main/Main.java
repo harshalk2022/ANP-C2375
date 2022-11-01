@@ -73,7 +73,19 @@ public class Main {
 				break;
 				
 			case 4:
-				System.out.println("Update Employee");
+				System.out.print("Enter Student Id to Update Student : ");
+				int employeeId = sc.nextInt();
+				sc.nextLine();
+				
+				System.out.print("Enter Name to Update :");
+				String employeeName = sc.nextLine();
+				boolean isUpdated = EmployeeDAO.updateEmployee(employeeId, employeeName);
+				
+				if(isUpdated) {
+					System.out.println("            -- Student Updated Successfully --");
+				}else {
+					System.out.println("            -- Someting went wrong --");
+				}
 				break;
 		
 			case 5:
