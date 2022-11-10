@@ -89,7 +89,7 @@ public class StudentDaoImpl implements StudentDao {
 			List<Student> students = query.getResultList();
 
 			Iterator<Student> iterator = students.iterator();
-			System.out.println("--- Students Details are ---");
+			System.out.println("				--- Students Details are ---");
 			System.out.println();
 
 			while (iterator.hasNext()) {
