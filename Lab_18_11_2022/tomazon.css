@@ -1,0 +1,154 @@
+body{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Header Section Start */
+.header{
+    width: 100%;
+    height: 60px;
+    /* background-color:rgba(224, 166, 166, 0.783); */
+    background-color: rgb(24, 84, 212);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+}
+
+.title{
+    width: 150px;
+    height: 60px;
+    color: aliceblue;
+    /* background-color: yellow; */
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_bar{
+    height: 60px;
+    width: 670px;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;  
+}
+
+.bar{
+    height: 35px;
+    width: 100%;
+    border: 0px;
+    font-size: 15px;
+}
+
+.search_bar button{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+}
+
+.nav{
+    width: 370px;
+    height: 60px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    width: 100%;
+    color: aliceblue;
+    font-family: Arial;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.login_button{
+    background-color: aliceblue;
+    border: none;
+    font-size: 15px;
+    height: 30px;
+    width: 80px;
+}
+
+button{
+    cursor: pointer;
+}
+/* Header Section End */
+
+/* Main Body Start */
+.phone{
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    cursor: grab;
+}
+
+.phone_name{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price{
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+.offer{
+    color: rgb(81, 168, 81);
+    font-size: 12px;
+}
+
+.mrp{
+    color: rgb(111, 110, 110);
+    font-size: 14px;
+}
+/* Main Body End */
+
+/* Footer Section Start */
+.footer{
+    height: 300px;
+    width: 100%;
+    /* background-color: rgba(217, 196, 196, 0.783); */
+    background-color: rgba(74, 123, 228, 0.687);
+}
+
+.footer_head{
+    font-size: 17px; 
+}
+
+.footer_content{
+    color: rgb(66, 62, 62);
+    font-size: 15px;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Footer Section End */
+
+.footer_end{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(42, 91, 198, 0.687);
+    font-size: 13px;
+    word-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
