@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+               
+               
+ <bean id="databasConnection"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/anp_c2375"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="Password@123"></property>
+ </bean>
+ 
+ <bean  id="jdbcTemplate"
+		class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="databasConnection"></property>
+ </bean>
+ 
+ <bean id="edao" class="com.springjdbc.daoimpl.StudentDaoImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+</bean>
+ 
+ </beans>
